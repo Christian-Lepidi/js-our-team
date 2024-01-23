@@ -40,5 +40,5 @@ let data = document.getElementById("data");
 
 for (i = 0; i < team.length; i++) {
   let persona = team[i];
-  data.innerHTML = persona;
+  data.innerHTML += `<ul><li>${persona.name}</li><li>${persona.role}</li><li>${persona.image}</li></ul>`;
 }
