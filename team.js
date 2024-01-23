@@ -35,3 +35,10 @@ console.log(team[1]);
 console.log(team[2]);
 console.log(team[3]);
 console.log(team[4]);
+
+let data = document.getElementById("data");
+
+for (i = 0; i < team.length; i++) {
+  let persona = team[i];
+  data.innerHTML = persona;
+}
