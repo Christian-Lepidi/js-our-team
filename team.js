@@ -40,7 +40,7 @@ let data = document.getElementById("data");
 for (i = 0; i < team.length; i++) {
   let persona = team[i];
 
-  `
+  let teamCompleto = `
   <div class="col-4">
           <div class="card">
             <img src="./img/${persona.image}" class="card-img-top" alt="member${persona.name}${persona.role} " />
@@ -51,5 +51,5 @@ for (i = 0; i < team.length; i++) {
             </div>
           </div>
         </div>`;
-  data.innerHTML += persona;
+  data.innerHTML += teamCompleto;
 }
