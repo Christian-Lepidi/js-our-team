@@ -30,15 +30,14 @@ const team = [
     image: "barbara-ramos-graphic-designer.jpg",
   },
 ];
-console.log(team[0]);
-console.log(team[1]);
-console.log(team[2]);
-console.log(team[3]);
-console.log(team[4]);
+
+for (members of team) {
+  console.log(members.name, members.role, members.image);
+}
 
 let data = document.getElementById("data");
 
 for (i = 0; i < team.length; i++) {
   let persona = team[i];
-  data.innerHTML += `<ul><li>${persona.name}</li><li>${persona.role}</li><li>${persona.image}</li></ul>`;
+  data.innerHTML += `<ul><li>${persona.name}</li><li>${persona.role}</li><li>${persona.image}</li><hr></ul>`;
 }
