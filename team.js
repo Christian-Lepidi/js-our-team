@@ -38,13 +38,15 @@ for (members of team) {
 let data = document.getElementById("data");
 
 for (i = 0; i < team.length; i++) {
-  let persona = `
+  let persona = team[i];
+
+  `
   <div class="col-4">
           <div class="card">
-            <img src="./img/${members.image}" class="card-img-top" alt="member${members.name}${members.role} " />
+            <img src="./img/${persona.image}" class="card-img-top" alt="member${persona.name}${persona.role} " />
             <div class="card-body text-center">
-              <h5 class="card-title">${members.name}</h5>
-              <p class="card-text">${members.role}</p>
+              <h5 class="card-title">${persona.name}</h5>
+              <p class="card-text">${persona.role}</p>
               
             </div>
           </div>
